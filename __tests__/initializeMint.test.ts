@@ -1,14 +1,8 @@
 import { initializeMintBuilder } from "@metaplex-foundation/js";
-import { Keypair, PublicKey } from "@solana/web3.js";
+import { PublicKey } from "@solana/web3.js";
+import { KEYPAIR_92GL } from "../src/keypairs";
 
-const mintKeypair = Keypair.fromSecretKey(
-  new Uint8Array([
-    248, 245, 206, 215, 221, 248, 207, 125, 63, 204, 25, 40, 10, 180, 174, 189,
-    124, 221, 111, 20, 34, 34, 147, 0, 194, 55, 115, 203, 41, 9, 128, 188, 119,
-    48, 108, 85, 136, 220, 56, 7, 110, 148, 77, 217, 121, 23, 39, 159, 71, 234,
-    16, 104, 242, 116, 18, 106, 192, 38, 254, 250, 104, 231, 160, 240,
-  ])
-);
+const mintKeypair = KEYPAIR_92GL;
 const mintAuthority = new PublicKey(
   "9Aq6XkUT8Nx2ztkpkUxc4HiVCFWKTJZWiLnhC94iofvy"
 );
