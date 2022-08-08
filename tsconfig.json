@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "outDir": "dist",
+    /* Specify ECMAScript target version */
+    "target": "es6",
+    /* Specify module code generation */
+    "module": "esnext",
+    /* Specify library files to be included in the compilation. */
+    "lib": ["ESNext", "DOM"],
+    /* Specify JSX code generation */
+    "jsx": "react",
+    /* Generate corresponding .map files */
+    "sourceMap": true,
+    /* Enable all strict type-checking options */
+    "strict": true,
+    /* Allow catch error type being unknown (used to be 'any') */
+    "useUnknownInCatchVariables": false,
+    /* Specify module resolution strategy */
+    "moduleResolution": "node",
+    /* List of folders to include type definitions from */
+    "typeRoots": ["../../node_modules/@types", "node_modules/@types"],
+    /* allow import React instead of import * as React */
+    "allowSyntheticDefaultImports": true,
+    /*  Emit interop between CommonJS and ES modules */
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "**/__tests__",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+}
